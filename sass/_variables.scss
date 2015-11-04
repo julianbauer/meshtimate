@@ -1,0 +1,27 @@
+@import 'compass/css3';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+$fontFamily: 'Open Sans', sans-serif;
+
+$backgroundImageLandscape:		url('../images/background_landscape.jpg') no-repeat center center fixed;
+$backgroundImageLandscapeBig:	url('../images/background_landscape_big.jpg') no-repeat center center fixed;
+$backgroundImagePortrait:			url('../images/background_portrait.jpg') no-repeat center center fixed;
+$backgroundImagePortraitBig:	url('../images/background_portrait_big.jpg') no-repeat center center fixed;
+
+
+
+$gridSVG: url('../images/grid.svg'), linear-gradient(transparent, transparent);
+$gridPNG: url('../images/grid.png');
+
+$logoLandscapeSVG: url('../images/logo_landscape.svg'), linear-gradient(transparent, transparent);
+$logoLandscapePNG: url('../images/logo_landscape.png');
+
+$logoPortraitSVG: url('../images/logo_portrait.svg'), linear-gradient(transparent, transparent);
+$logoPortraitPNG: url('../images/logo_portrait.png');
+
+
+%grid {
+	background: $gridPNG;
+	background: $gridSVG;
+	background-repeat: repeat;
+}
