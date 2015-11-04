@@ -16,11 +16,13 @@ html, body {
 	only screen and (                min-resolution: 2dppx)		and ( orientation: portrait ) {
 		
 		background: $backgroundImagePortraitBig;
+		@include background-size(cover);
 		
 	}
 	
 	@media only screen and ( orientation: landscape ) {
 		background: $backgroundImageLandscape;
+		@include background-size(cover);
 	}
 	
 	@media
@@ -33,7 +35,7 @@ html, body {
 	only screen and (                min-resolution: 2dppx)		and ( min-width: 800px ) and ( orientation: portrait ) {
 		
 		background: $backgroundImageLandscapeBig;
-		
+		@include background-size(cover);
 	}
 	
 }
@@ -74,13 +76,12 @@ html, body {
 }
 
 #logo {
+	width: 100%;
+	height: 100%;
 	
 	background: $logoPortraitPNG;
 	background: $logoPortraitSVG;
 	background-repeat: no-repeat;
-	
-	width: 100%;
-	height: 100%;
 	background-position: center;
 	background-size: 80% auto;
 	
@@ -88,5 +89,7 @@ html, body {
 		background: $logoLandscapePNG;
 		background: $logoLandscapeSVG;
 		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80% auto;
 	}
 }
